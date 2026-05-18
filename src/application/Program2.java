@@ -37,7 +37,12 @@ public class Program2 {
         dep3 = departmentDao.findById(1);
         System.out.println(dep3);
 
-
+        System.out.println("\n=== TEST 5: department delete ===");
+        dep3 = departmentDao.findById(6);
+        System.out.println(dep3);
+        departmentDao.deleteById(6);
+        dep3 = departmentDao.findById(6);
+        System.out.println(dep3);
 
     }
 }
